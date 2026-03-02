@@ -29,7 +29,7 @@ def insertion_sort(array, length) -> None:
         array[j + 1] = chave
 
 
-def benchmark() -> None:
+def main() -> None:
     """
     Executa testes de desempenho comparando o Insertion Sort
     com o método embutido sorted() do Python.
@@ -68,22 +68,6 @@ def benchmark() -> None:
             f"Tamanho {n:6d} | InsertionSort = {tempo_insertion:.4f}s "
             f"| sorted() = {tempo_sorted:.4f}s"
         )
-
-
-def main() -> None:
-    """
-    Função principal para rodar os algoritmos e trazer os comparativos.
-
-    Params
-    ----------
-    None
-
-    Returns
-    -------
-    None
-        Apenas executa o benchmark e imprime os resultados.
-    """
-    benchmark()
 
 
 if __name__ == "__main__":
